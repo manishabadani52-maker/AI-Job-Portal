@@ -27,7 +27,7 @@ await cloudinary
 app.use(cors({
      origin: [
         'http://localhost:5173',
-        'https://job-portal-7wdd.vercel.app'
+        'https://ai-job-portal-frontend-odn5.onrender.com'
     ],
     credentials: true
 }))
