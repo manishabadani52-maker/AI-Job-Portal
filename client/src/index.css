@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+*{
+    font-family: Outfit;
+}
+/*Custom clas Names*/
+@layer base{
+    html{
+        scroll-behavior: smooth;
+    }
+}
+::-webkit-scrollbar{
+    display:none;
+}
+.job-description{
+    margin-top: 2rem;
+    color: #4b5563;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+.job-description h4{
+    color: #111827;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #2563eb;
+    padding-left: 12px;
+}
+
+.job-description p{
+    margin: 18px 0;
+    text-align: justify;
+}
+
+.job-description ol,
+.job-description ul{
+    margin: 1rem 0;
+    padding-left: 1.8rem;
+}
+
+.job-description li{
+    margin-bottom: 12px;
+    padding-left: 6px;
+}
+
+.job-description strong{
+    color: #111827;
+    font-weight: 600;
+}
+
+.job-description a{
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.job-description a:hover{
+    text-decoration: underline;
+}
+
+.job-description img{
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+/* AI-GENERATED: Slide-in animation for the AI Analysis Modal.
+   The modal animates from slightly below its final position and fades in.
+   This gives it a polished, modern feel without any extra JS animation libraries.
+   The 'animate-slideIn' Tailwind utility class triggers this keyframe. */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.97);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.animate-slideIn {
+    animation: slideIn 0.3s ease-out forwards;
+}
